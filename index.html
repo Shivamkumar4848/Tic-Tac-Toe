@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <fieldset>
+            <legend>
+                <h1>Tic Tac Toe</h1>
+            </legend>
+            <div class="box-content">
+            <div class="main">
+                <div class="box" id='box1' onclick="gameSet(this)" data-id = '0'></div>
+                <div class="box" id='box2' onclick="gameSet(this)" data-id = '0'></div>
+                <div class="box" id="box3" onclick="gameSet(this)" data-id = '0'></div>
+            </div>
+            <div class="main">
+                <div class="box" id='box4' onclick="gameSet(this)" data-id = '0'></div>
+                <div class="box" id='box5' onclick="gameSet(this)" data-id = '0'></div>
+                <div class="box" id="box6" onclick="gameSet(this)" data-id = '0'></div>
+            </div>
+            <div class="main">
+                <div class="box" id='box7' onclick="gameSet(this)" data-id = '0'></div>
+                <div class="box" id='box8' onclick="gameSet(this)" data-id = '0'></div>
+                <div class="box" id="box9" onclick="gameSet(this)" data-id = '0'></div>
+            </div>
+        </div>
+        </fieldset>
+
+
+        <div class="results">
+            <div id="message">Start Game!</div>
+            <button class='btn' onclick="resetAll()">Reset</button>
+        </div>
+    </div>
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
