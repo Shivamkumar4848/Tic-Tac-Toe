@@ -18,16 +18,18 @@ gameSet = (ele) => {
                 ele.setAttribute('data-id', '1')
                 message.innerText = 'Player O turn!'
             }
-            count++
             if (count > 4) {
                 if ((div1.innerText === 'X' && div2.innerText === 'X' && div3.innerText === 'X') || (div4.innerText === 'X' && div5.innerText === 'X' && div6.innerText === 'X') || (div7.innerText === 'X' && div8.innerText === 'X' && div9.innerText === 'X') || (div1.innerText === 'X' && div5.innerText === 'X' && div9.innerText === 'X') || (div3.innerText === 'X' && div5.innerText === 'X' && div7.innerText === 'X') || (div1.innerText === 'X' && div4.innerText === 'X' && div7.innerText === 'X') || (div2.innerText === 'X' && div5.innerText === 'X' && div8.innerText === 'X') || (div3.innerText === 'X' && div6.innerText === 'X' && div9.innerText === 'X')) {
                     message.innerText = "Player 'X' Won!"
+                    count = 9
                     resetAll()
                 } else if ((div1.innerText === 'O' && div2.innerText === 'O' && div3.innerText === 'O') || (div4.innerText === 'O' && div5.innerText === 'O' && div6.innerText === 'O') || (div7.innerText === 'O' && div8.innerText === 'O' && div9.innerText === 'O') || (div1.innerText === 'O' && div5.innerText === 'O' && div9.innerText === 'O') || (div3.innerText === 'O' && div5.innerText === 'O' && div7.innerText === 'O') || (div1.innerText === 'O' && div4.innerText === 'O' && div7.innerText === 'O') || (div2.innerText === 'O' && div5.innerText === 'O' && div8.innerText === 'O') || (div3.innerText === 'O' && div6.innerText === 'O' && div9.innerText === 'O')) {
                     message.innerText = "Player 'O' Won!"
+                    count = 9
                     resetAll()
                 }
             }
+            count++
 
         }
     } else {
@@ -47,7 +49,7 @@ resetAll = () => {
 
     }
     message.innerText = 'Start Game!'
-},1500)
+},1000)
 }
 
 
